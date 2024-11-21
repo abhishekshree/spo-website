@@ -14,6 +14,12 @@ interface Proforma {
 	name: string;
 	link: string;
 }
+const Routes = [
+	{ 
+		name: "Placement Proformas",
+		url: "/proformas/placement" 
+	}
+]
 
 const BASE_URL = "https://drive.google.com/file/d/"
 
@@ -34,7 +40,7 @@ const PastInternProformas = () => {
 	}
 
 	return (
-		<Page title="Previous Year Intern Proformas">
+		<Page title="Previous Year Intern Proformas" routes={Routes}>
 			<div id="steps">
 				<Section title="2023-2024">
 					<Container>
